@@ -1,0 +1,61 @@
+.sub_container{
+    position: absolute;
+   top: 0;
+    background-color: rgb(66, 85, 99);
+    width: 108%;
+    left: 0;
+    z-index: -1;
+    padding-top: 5rem;
+}
+.center_dropdown{
+    width: 90vw;
+    color:white;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    padding: 2rem 0;
+}
+.sub_links{
+    border-right: 1px solid rgba(255, 255, 255, 0.742);
+    padding: 0 1rem 1rem 2rem;
+}
+.sub_links li{
+    list-style: none;
+    padding-top: 0.5rem;
+
+}
+.sub_links li a {
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.firstCl{
+    padding-left: 1rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.616);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+.firstCl ::before{
+    content: "+";
+    position: absolute;
+    font-size: 2rem;
+    top: 6rem;
+    color: #bd2816;
+    left: 4rem;
+    font-weight: normal;
+}
+.thirdcl{
+    padding: 0 1rem 1rem 2rem;
+}
+.thirdcl h5{
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+.thirdcl img{
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+}

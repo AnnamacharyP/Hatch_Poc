@@ -1,0 +1,143 @@
+.Footer_Container{
+    width: 100vw;
+    background: #425563;
+    color: #fff;
+    padding: 20px 0 100px;
+    padding: 70px 0;  
+    font-size: 1.3rem;
+    font-weight: lighter;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+  
+  
+}
+.Footer_Center{
+   max-width: 1200px;
+   width: 90vw;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   color: inherit;
+   outline: none;
+}
+
+
+
+
+.headinga{
+    color: inherit;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    
+    /* vertical-align: middle;
+display: flex;
+align-items: center; */
+}
+
+
+.footer_main {
+   
+    font-weight: 400;
+    outline: none;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #fff;
+    text-decoration: none;
+   
+}
+.footer_main:focus,
+.footer_main:hover{
+  
+   text-decoration: underline;
+    
+}
+.logo{
+    display: block;
+        max-width: 100%;
+        height: auto;
+}
+
+/* .icons{
+
+} */
+
+.call2action{
+    background: #425563;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 400;
+    padding: 6px 20px;
+    white-space: normal;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    
+}
+
+
+
+
+ .call2action:focus,
+ .call2action:active:focus,
+ .call2action.active:focus,
+ .call2action.focus,
+ .call2action:active.focus,
+.call2action.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+ .call2action:hover,
+ .call2action:focus,
+.call2action.focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.call2action:active,
+ .call2action.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.call2action.disabled,
+.call2action[disabled],
+fieldset[disabled]  .call2action {
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+ .call2action:hover {
+    background: #fff;
+    border-color: #425563;
+    color: #425563;
+}
+.call2action:hover a {
+    color: white;
+}
