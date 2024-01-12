@@ -1,0 +1,23 @@
+.card_container{
+    width: 100vw;
+    background: #0c74bf;
+    color: #fff;
+    padding: 20px 0 100px;
+    padding: 70px 0;  
+    font-size: 1.3rem;
+    font-weight: lighter;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+  
+  
+}
+.card_center{
+   max-width: 1200px;
+   width: 90vw;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   color: inherit;
+   outline: none;
+}

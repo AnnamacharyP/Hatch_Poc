@@ -52,7 +52,7 @@ function Footers({}:any) {
     <div className={styles.Footer_Center}>
    
     
-   {data.map((item)=> {
+    {data.map((item)=> {
     if(item.id===1){
         return(
             <div >
