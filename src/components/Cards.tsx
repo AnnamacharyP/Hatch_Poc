@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import styles from "../css/card.module.css"
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 let data = [
   {
     id: 1,
@@ -47,6 +49,26 @@ let data = [
   }
  ];
 
+ const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
 function Card() {
 //   const [currentIndex, setCurrentIndex] = useState(0);
 //   useEffect(() => {
@@ -61,128 +83,33 @@ function Card() {
 //     };
 //   }, [currentIndex]);
 
-  return (
-    // <div className={styles.hero_container}>
-    //   {data.map((item, index): any => {
-    //     return (
-    //       <section
-    //         style={{
-    //           width: "100%",
-    //           position: "absolute",
-    //           height: "100%",
-    //           transform: `translateX(${100 * (index - currentIndex)}%)`,
-    //           //   transition: "0.2s ease",
-    //         }}
-    //       >
-    //         <div
-    //           style={{ position: "relative", width: "100%", height: "100%" }}
-    //         >
-    //           {item?.imageUrl && (
-    //             <img
-    //               src={item.imageUrl}
-    //               alt=""
-    //               style={{
-    //                 width: "100%",
-    //                 height: "100%",
-    //                 objectFit: "cover",
-    //               }}
-    //             />
-    //           )}
-    //           {item?.videoUrl && (
-    //             <video
-    //               src={item.videoUrl}
-    //               style={{
-    //                 width: "100%",
 
-    //                 height: "100%",
-    //                 objectFit: "cover",
-    //               }}
-    //               autoPlay
-    //               muted
-    //               playsInline
-    //             />
-    //           )}
-    //           <div className={styles.text_container}>
-    //             <h1 style={{ fontWeight: "lighter", fontSize: "3rem" }}>
-    //               {item.heading}
-    //             </h1>
-    //             <h1
-    //               style={{
-    //                 fontSize: "2rem",
-    //                 marginTop: "0.5rem",
-    //                 fontWeight: "normal",
-    //               }}
-    //             >
-    //               {item.heading2}
-    //             </h1>
-    //             <div className={styles.content_container}>
-    //               <p className={styles.content}>{item.content}</p>
-    //               <button className={styles.hero_btn}>read more</button>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </section>
-    //     );
-    //   })}
-    // </div>
-  <div className={styles.card_container}>
+ 
+  return (
+    <>
+    <h1 className={styles.head}>Latest Insights</h1>
+    <Carousel responsive={responsive} className= {styles.card_container}>
     
-    <div className={styles.card_center}>
-     {
-        data.map((item) =>{
-            if(item.id ===1){
-                return(
-                    <>
-                                  <div> <img src={item.imageUrl} alt="" /></div>
-                    <h1>{item.content}</h1>
-                    {/* <h1>{item.content2}</h1> */}
-                    
-                    </>
-                    
-                )
-            }
-            if(item.id ===2){
-                return(
-                    <>                
-                    <div> <img src={item.imageUrl} alt="" /></div>
-                    <h1>{item.content}</h1>
-                    </>
-                )
-                
-            }
-            if(item.id ===3){
-                return(
-                    <>                
-                    <div> <img src={item.imageUrl} alt="" /></div>
-                    <h1>{item.content}</h1>
-                    </>
-                )
-                
-            }
-            if(item.id ===4){
-                return(
-                    <>                
-                    <div> <img src={item.imageUrl} alt="" /></div>
-                    <h1>{item.content}</h1>
-                    </>
-                )
-                
-            }
-            if(item.id ===5){
-                return(
-                    <>                
-                    <div> <img src={item.imageUrl} alt="" /></div>
-                    <h1>{item.content}</h1>
-                    </>
-                )
-                
-            }
-        })
-     }
-    </div>
-  </div>
-  
+      {data.map((item) => (
+        <div key={item.id} className={styles.card_center}>
+          <div >
+            <img src={item.imageUrl} alt="" />
+          </div>
+          <div className= {styles.card_text} >
+          <h1>{item.content}</h1>
+          <p>{item.content2}</p>
+          </div>
+          
+        
+        </div>
+        
+      ))}
+    </Carousel>
+    
+</>
   );
 }
+ 
 
 export default Card;
+ 

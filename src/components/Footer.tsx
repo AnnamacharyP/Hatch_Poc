@@ -69,7 +69,7 @@ function Footers({}:any) {
                     return(
                       <ul className= {styles.headinga}>
                        
-                            <a  className={styles.footer_main} href={child.href}>{child.name}</a>
+                    <a  className={styles.footer_main} href={child.href}>{child.name}</a>
                       
                       </ul>
                     )
