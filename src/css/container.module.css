@@ -1,0 +1,122 @@
+.Content{
+    background-color: #e84a37;
+    color: #fff;
+    padding: 0;
+    padding-top: 95px;
+    padding-bottom: 85px;
+    
+}
+.Main{
+    background-color: #f3f3f3;
+    color: #425563;
+    padding: 0;
+    padding-top: 85px;
+    
+   
+}
+.mixedContent{
+    text-align: center;
+  
+   
+}
+.deets{
+    color: inherit;
+    font-size: 23px;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #425563;
+    
+}
+.text{
+    color: #425563;
+    font-size: 38px;
+    font-weight: 200;
+    line-height: 1.1;
+    margin: 0 0 11px;
+   
+}
+
+.call2action{
+    background-color: #e84a37;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #fff;
+    
+    font-weight: 400;
+    padding: 6px 20px;
+    white-space: normal;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    text-decoration: none;
+
+}
+
+.call2action a{
+    text-decoration: none;
+    color: #e6dbdb;
+}
+
+
+ .call2action:focus,
+ .call2action:active:focus,
+ .call2action.active:focus,
+ .call2action.focus,
+ .call2action:active.focus,
+.call2action.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+ .call2action:hover,
+ .call2action:focus,
+.call2action.focus {
+    color: #ec1818;
+    text-decoration: none;
+}
+
+.call2action:active,
+ .call2action.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.call2action.disabled,
+.call2action[disabled],
+fieldset[disabled]  .call2action {
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+ .call2action:hover {
+    background: #e6dbdb;
+    border-color: #425563;
+    color: #425563;
+}
+.call2action:hover a {
+    color: rgb(245, 60, 60);
+}
+
+
+

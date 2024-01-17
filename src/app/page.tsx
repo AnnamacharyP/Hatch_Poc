@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Footers from "@/components/Footer";
 import Card from "@/components/Cards";
 import BackToTopButton from "@/components/Backtotop";
+import Container from "@/components/Container";
 export default function Home() {
   return (
     <main>
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Card/>
       <BackToTopButton/>
+      <Container/>
       <Footers/>
     </main>
   );

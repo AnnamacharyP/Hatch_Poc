@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useEffect } from 'react';
-import styles from '../css/navbar.module.css';
-import { MdArrowCircleUp } from "react-icons/md"; 
+import React, { useState, useEffect } from "react";
+import styles from "../css/navbar.module.css";
+import { BsArrowUpCircle } from "react-icons/bs";
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -17,28 +17,23 @@ const BackToTopButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
     return () => {
-      window.removeEventListener('scroll', toggleVisibility);
+      window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
 
   return (
-  
-   
-    
-
-    
-  
-    <MdArrowCircleUp  className={`${styles.backToTopButton} ${isVisible ? styles.visible : ''}`} size={24} onClick={scrollToTop} />
-
-  
-    
+    <button
+      className={`${styles.backToTopButton} ${isVisible ? styles.visible : ""}`}
+    >
+      <BsArrowUpCircle onClick={scrollToTop} className={styles.b2ticon} />
+    </button>
   );
 };
 
