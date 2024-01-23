@@ -56,17 +56,26 @@ let data = [
 ];
 
 function SampleNextArrow(props: any) {
-  const [disable,setdisable] = useState(false)
+  const [disable,setdisable] = useState(false);
+  const handleBeforeChange = () => {
+    setdisable(true);
+  };
+
+  const handleAfterChange = () => {
+    setdisable(false);
+  };
   const { className, style, onClick } = props;
   return (
     <div style={{ fontSize: "2rem" }}>
-      <MdKeyboardArrowRight
+      <MdKeyboardArrowRight 
+       beforeChange={handleBeforeChange}
+       afterChange={handleAfterChange}
         className={className}
         style={{
           ...style,
           display: "block",
           color: "black",
-          fontSize: "10rem",
+          fontSize: "20rem",
           // setdisable(true)
         }}
         size={30}
@@ -78,12 +87,21 @@ function SampleNextArrow(props: any) {
 
 function SamplePrevArrow(props: any) {
   const { className, style, onClick } = props;
+  const [disable,setdisable] = useState(false);
+  const handleBeforeChange = () => {
+    setdisable(true);
+  };
+
+  const handleAfterChange = () => {
+    setdisable(false);
+  };
   return (
     <MdKeyboardArrowLeft
+  
+      disabled= {disable}
       className={className}
       style={{ ...style, display: "block", color: "black" }}
       onClick={onClick}
-      
     />
   );
 }
@@ -107,7 +125,7 @@ function Card() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
+    nextArrow: <SampleNextArrow  />,
     prevArrow: <SamplePrevArrow />,
   };
 

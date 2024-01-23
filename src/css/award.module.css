@@ -1,0 +1,78 @@
+.container{
+    width: 1170px;
+    
+}
+.section{
+    margin: 4rem 0;
+
+}
+.img{
+    max-width: 330px;
+    height: 330px;
+    object-fit: none;
+    object-position: 42% 39%;
+    border-radius: 50%;
+    border: 16px solid #ffffff;
+    vertical-align: middle;
+    margin-left: 7rem;
+    
+}
+.sidebarBlock_richText {
+    position: relative;
+    min-width: 2rem;
+    margin-right: 7rem;
+border-right: 50px;
+/* border: 2px solid red; */
+/* border-radius: 25px;
+border: 2px solid #73AD21; */
+padding: 30px 50px 80px 10px;
+    border-radius: 10px;
+    border: 1px solid #d5d5d5;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 120%;
+    height: 80%;
+}
+.cim_trophy{
+    display: inline-block;
+    position: absolute;
+ object-fit:contain ;
+height: 20rem;
+left: 20rem;
+bottom: 3rem;
+   margin-left: 1.3rem;
+   display: inline-block;
+   position: absolute;
+   height: 350px;
+   right: -113px;
+   top: -45px;
+   margin-top: 1rem;
+  
+
+}
+#cta_more a:hover{
+    background-color: white;
+    color: black;
+}
+#cta_more a{
+    border: 1px solid #e84a37;
+    padding: 7px 61px;
+    background-color: #e84a37;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.sidebarBlock_richText em{
+    font-style: italic;
+
+}
+.sidebarBlock_richText h3{
+    font-size: 26px;
+    font-weight: 400;
+
+}
+.sidebarBlock_richText p{
+    width:550px;
+    margin: 0 0 11px;
+}

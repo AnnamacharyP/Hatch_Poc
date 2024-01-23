@@ -6,6 +6,8 @@ import Footers from "@/components/Footer";
 import Card from "@/components/Cards";
 import BackToTopButton from "@/components/Backtotop";
 import Container from "@/components/Container";
+import News from "@/components/News";
+import Awards from "@/components/Awards";
 export default function Home() {
   return (
     <main>
@@ -13,6 +15,8 @@ export default function Home() {
       <Hero />
       <Card/>
       <BackToTopButton/>
+      <News/>
+      <Awards/>
       <Container/>
       <Footers/>
     </main>

@@ -55,7 +55,7 @@ function Footers({}:any) {
     {data.map((item)=> {
     if(item.id===1){
         return(
-            <div >
+            <div style={{marginRight:"2rem"}}>
                 <h1 className= {styles.headinga}>{item.content}</h1>
                <div className={styles.logo}> <img src={item.imageUrl} alt="" /></div>
             </div>
