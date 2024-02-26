@@ -14,11 +14,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Card/>
-      <BackToTopButton/>
+      {/* <BackToTopButton/> */}
       <News/>
       <Awards/>
       <Container/>
-      <Footers/>
+      {/* <Footers/> */}
     </main>
   );
 }

@@ -1,0 +1,68 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #425563;
+    font-size: 58px;
+    font-weight: 300;
+    align-items: center;
+
+}
+ .content-flex {
+    display: flex; 
+    justify-content: space-evenly;
+}
+.mission_txt{
+    padding: 50px 80px;
+    z-index: 5;
+    position: relative;
+    line-height: 30px;
+}
+.mission_txt a{
+    text-decoration: none;
+    color: red;
+}
+ .content_People {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 43px;
+}
+.col1{
+    max-width: 420px;
+    padding: 130px 0px 10px;
+    position: relative;
+    text-align: right;
+    
+
+}
+.col1 h1{
+    font-size: 58px;
+    font-weight: 200;
+    line-height: 60px;
+    text-transform: uppercase;
+
+}
+.col2{
+    max-width: 570px;
+    line-height: 30px;
+}
+.col2 img{
+    border-radius: 50%;
+    height: auto;
+    max-width: 450px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 30px;
+}

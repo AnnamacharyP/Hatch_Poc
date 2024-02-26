@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, Children } from "react";
-import styles from "../css/Footer.module.css";
+import styles from "../css/Footer.module.scss";
 import { link } from "fs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -44,12 +44,11 @@ let data = [
 function Footers({}:any) {
 
 
-   
-
   return (
   
     <div className={styles.Footer_Container}>
     <div className={styles.Footer_Center}>
+   
    
     
     {data.map((item)=> {

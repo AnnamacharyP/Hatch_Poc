@@ -1,13 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import styles from "../css/navbar.module.css";
+import styles from "../css/navbar.module.scss";
 import { BsArrowUpCircle } from "react-icons/bs";
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (window.scrollY > 300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

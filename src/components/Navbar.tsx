@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import styles from "../css/navbar.module.css";
+import styles from "../css/navbar.module.scss";
 import { FaSearch } from "react-icons/fa";
 import Dropdown from "./Dropdown";
 import { data } from "./data";
-
+import Page from "@/app/About_The_Company/page";
 function Navbar() {
   const [activeId, setActiveId]: any = useState(null);
 
@@ -29,7 +29,7 @@ function Navbar() {
                 <a
                   key={item.id}
                   className={styles.nav_link}
-                  href="/"
+                  href="/About_The_Company"
                   onMouseEnter={() => setActiveId(item.id)}
                 >
                   {item.name}

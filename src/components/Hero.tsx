@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import styles from "../css/hero.module.css";
+import styles from "../css/hero.module.scss";
 let data = [
   {
     id: 1,

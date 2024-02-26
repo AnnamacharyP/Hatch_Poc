@@ -1,6 +1,6 @@
 import React from "react";
 import { data } from "./data";
-import styles from "../css/dropdown.module.css";
+import styles from "../css/dropdown.module.scss";
 function Dropdown({ activeId }: any) {
   const currentpage = data.find((item) => item.id === activeId);
 
@@ -8,10 +8,10 @@ function Dropdown({ activeId }: any) {
     return;
   }
 
-  if(!currentpage?.children){
+  if (!currentpage?.children) {
     return;
   }
-  
+
   return (
     <div className={styles.sub_container}>
       <div className={styles.center_dropdown}>
