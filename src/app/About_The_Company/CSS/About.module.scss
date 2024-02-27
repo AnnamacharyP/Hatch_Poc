@@ -37,13 +37,13 @@
   margin-bottom: 10px;
   
 }
-.accordion_container p {
+.accordion-container p {
   padding: 15px 15px;
   background: rgb(250, 243, 243);
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
-.accordion_container label:after {
+.accordion-container label:after {
   content: "◄";
   position: absolute;
   width: 32px;
@@ -55,6 +55,7 @@
   color: #425563;
   
 }
+
 .panel1 {
   box-sizing: content-box;
   border: 1px solid #d5d5d5;
@@ -68,11 +69,11 @@
   margin-right: auto;
 }
 
-.accordion_container {
+.accordion-container {
   width: 100%;
 }
 
-.accordion_container label {
+.accordion-container label {
   font-family: Arial, sans-serif;
   padding: 8px 30px;
   position: relative;
@@ -106,19 +107,19 @@
 
 }
 
-.accordion_container label:hover {
+.accordion-container label:hover {
   background: #f9f9f9;
 }
-.accordion_container input:checked + label,
-.accordion_container input:checked + label:hover {
+.accordion-container input:checked + label,
+.accordion-container input:checked + label:hover {
   background: #ffffff;
   font-weight: 600;
   border-bottom: none;
   cursor: default;
 }
 
-.accordion_container input:checked,
-.accordion_container label:after {
+.accordion-container input:checked,
+.accordion-container label:after {
   content: "◄";
   position: absolute;
   width: 32px;
@@ -130,7 +131,7 @@
   color: #425563;
 }
 
-.accordion_container input:not(:checked) + label:after {
+.accordion-container input:not(:checked) + label:after {
   content: "▼";
   position: absolute;
   width: 28px;
@@ -147,6 +148,6 @@
   border: 1px dotted #f9f9f9;
   line-height: 29px;
 }
-.accordion_container input {
+.accordion-container input {
   display: none;
 }

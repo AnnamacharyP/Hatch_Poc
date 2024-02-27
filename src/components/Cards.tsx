@@ -68,7 +68,7 @@ function SampleNextArrow(props: any) {
   return (
     <div style={{ fontSize: "2rem" }}>
       <MdKeyboardArrowRight
-        beforeChange={handleBeforeChange}
+        beforeChange ={handleBeforeChange}
         afterChange={handleAfterChange}
         className={className}
         style={{
